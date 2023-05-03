@@ -1,0 +1,21 @@
+@import '../shared/mui';
+
+.container {
+    width: 100%;
+}
+.formInput {
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+}
+.branchLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagesContainer {
+    width: 100%;
+    @include mui-respond-down(sm) {
+        justify-content: center;
+    }
+}

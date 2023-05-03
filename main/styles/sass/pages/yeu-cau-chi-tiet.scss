@@ -1,0 +1,185 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+    text-align: center;
+    margin: auto auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 0px;
+    outline: none;
+    display: flex;
+    height: 950px;
+    position: relative;
+  
+    @include respond-down($container-xl) {
+      width: 80%;
+    }
+  
+    @include respond-down($container-lg) {
+      width: 100%;
+      height: 800px;
+    }
+}
+.sideBarContainer {
+    font-size: 0.9em;
+    width: 20%;
+    position: fixed;
+    right: 20%;
+    height: auto;
+    @include respond-down($container-xl) {
+        width: 30%;
+        right: 10%;
+    }
+
+    @include respond-down($container-lg) {
+      top: 10%;
+      padding: 5%;
+      background: #F3F3F3;
+      right: 0%;
+      width: 90%;
+    }
+}
+.sidebarInfoContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  font-weight: bold;
+}
+.sidebarInfoContainer img {
+  border-radius: 50%;
+}
+// this use for jobs display
+.jobContainer {
+    width: 60%;
+    padding: 2%;
+    @include respond-down($container-lg) {
+      padding: 90px 0 0 0;
+      width: 100%;
+    }
+}
+.jobShortDescription {
+    margin: 0 0 3% 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    @include mui-respond-down(md) {
+      display: none;
+    }
+}
+// this use for tag
+.tagContainer {
+    display: flex;
+    padding: 20px 0 10px 2%;
+}
+.tag {
+    display: inline-block;
+    background-color: rgba(196, 196, 196, 1);
+    padding: ($mui-spacing-unit / 2) $mui-spacing-unit;
+    border-radius: 3px;
+    font-style: italic;
+    font-weight: 600;
+    margin: ($mui-spacing-unit / 2);
+}
+// this use for short description
+.descriptionContainer {
+    text-align: left;
+    font-size: 20px;
+    padding: 0 2% 0 2%;
+}
+.descriptionItem {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.descriptionItem div {
+    margin: 0 0 0 10px;
+}
+.fullDescription {
+    padding: 10px 0 0 0;
+}
+.button {
+    width: 60%;
+    margin: auto;
+    padding: 20px 0 0 0;
+    @include mui-respond-down(md) {
+        width: 60%;
+    }
+}
+.button:last-of-type {
+  @include mui-respond-down(md) {
+    display: none;
+  }
+}
+.root {
+    background-color:#4db428;
+    font-size: 1em;
+    color: white;
+    @include mui-respond-down($container-lg) {
+      fontsize: 8px;
+    }
+}
+.root div {
+    font-size: 12px;
+}
+.noteText {
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 0.7em;
+  font-style: italic;
+}
+  
+// this use for carousel
+.carouselContainer {
+    margin-bottom: 30px;
+    background: black;
+    height: 400px;
+    @include respond-down($container-lg) {
+      height: 250px;
+    }
+  }
+  .carousel {
+    margin: auto;
+    width: 90%;
+    @include respond-down($container-lg) {
+      width: 80%;
+    }
+  }
+  .carouselImageContainer {
+    position: relative;
+  }
+  .carouselImage {
+    margin: auto;
+    height: 400px;
+    @include respond-down($container-lg) {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  .legend {
+    width: 60%;
+    padding: 3px;
+    background: rgb(0,0,0);
+    margin: auto;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    border-radius: 8px;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    -webkit-transition:opacity .35s ease-in-out;
+    -moz-transition:opacity .35s ease-in-out;
+    -ms-transition:opacity .35s ease-in-out;
+    -o-transition:opacity .35s ease-in-out;
+    transition:opacity .35s ease-in-out;
+    @include respond-down($container-lg) {
+      width: 80%;
+      left: 10%;
+    }
+  }
+  .carouselContainer:hover .legend {
+    opacity: 0.9;
+  }

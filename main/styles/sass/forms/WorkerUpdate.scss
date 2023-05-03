@@ -1,0 +1,83 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.imgDesc {
+  margin-bottom: ($mui-spacing-unit * 2);
+  &Title {
+    margin: 0;
+    font-weight: normal;
+  }
+  &SubTitle {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+.imgUploadButton {
+  margin-top: $mui-spacing-unit;
+}
+
+@include mui-respond-down(sm) {
+  .img {
+    &Container {
+      justify-content: center;
+    }
+    &Avatar img{
+      display: block;
+      margin: auto;
+    }
+    &UploadButton {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &Desc {
+      margin-bottom: ($mui-spacing-unit * 2);
+      &Title {
+        text-align: center;
+      }
+      &SubTitle {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.btn {
+  &Root {
+    background-color: $mui-color-primary;
+  }
+  &Lbl {
+    color: white;
+  }
+}
+
+
+.form {
+  &Container {
+    padding: ($mui-spacing-unit * 3);
+    margin: auto;
+    width: 80%;
+  }
+
+  &Field {
+    width: 100%;
+    margin: {
+      top: ($mui-spacing-unit / 2);
+      bottom: ($mui-spacing-unit / 2);
+    }
+  }
+
+  &BtnDialog {
+    height: 48px;
+    width: 128px;
+    display: block;
+    margin: ($mui-spacing-unit * 2) auto 0 auto;
+  }
+}

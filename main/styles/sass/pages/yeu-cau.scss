@@ -1,0 +1,108 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+    text-align: center;
+    margin: auto auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 0px 0px;
+    outline: none;
+    @include respond-down($container-xl) {
+      width: 80%;
+    }
+    @include respond-down($container-lg) {
+      width: 100%;
+    }
+}
+.pageHeader  {
+    text-align: center;
+    padding: 2%;
+}
+.searchContainer {
+    display: flex;
+}
+.labelContainer {
+    padding-top: 7px;
+    width: 180px;
+    text-align: left;
+    display: none;
+    @include respond-down($container-lg) {
+        display: inline;
+    }
+}
+.labelContainer p{
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px 8px;
+    height: 47px;
+}
+.selectors {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include respond-down($container-lg) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 130px;
+    }
+}
+  
+.searchMiddle {
+    font-size: 15px;
+    color: #555555;
+    background-color: white !important;
+    width: 30% !important;  
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid $mui-color-secondary;
+    border-radius: 0.3rem;
+    margin: 0px 8px;
+    height: 50px;
+    box-shadow: none !important;
+  
+    @include respond-down($container-lg) {
+        height: 30px;
+        width: 90% !important;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.jobDisplayContainer {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.paper {
+    height: 130px;
+    font-size: 15px;
+    transition: all 0.3s;
+    @include respond-down($container-lg) {
+        height: auto;
+    }
+}
+.description {
+    display: none;
+    font-size: 10px;
+}
+.paper:hover {
+    height: auto;
+    padding: 10px 0 15px 0;
+    border: solid $mui-color-primary 1px;
+    cursor: pointer;
+}
+.paper:hover .description {
+    display: contents;
+}
+.smallText {
+    font-size: 10px;
+    font-style: italic;
+    color: #5E5E5E;
+    font-weight: bolder;
+}

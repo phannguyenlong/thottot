@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "server",
+    "main"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit"
+    }
+  },
+  "devDependencies": {
+    "husky": "^2.4.1",
+    "lerna": "^3.15.0"
+  }
+}

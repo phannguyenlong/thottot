@@ -1,0 +1,32 @@
+@import '../shared/responsive.scss';
+
+.container {
+    text-align: justify;
+    margin: auto auto;
+    width: 55%;
+    background-color: #fff;
+    padding: 1% 2.5%;
+    outline: none;
+    @include respond-down($container-xl) {
+        width: 77%;
+        padding: 15px 20px 30px 20px;
+    }
+    @include respond-down($container-lg) {
+        width: 87%;
+        padding: 15px 20px 30px 20px;
+    }
+}
+
+.title {
+    color: #03dac6;
+    text-align: left;
+    font-size: 27px;
+}
+
+.pageName {
+    font-size: 2.4em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}

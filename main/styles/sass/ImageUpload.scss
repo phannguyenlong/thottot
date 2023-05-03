@@ -1,0 +1,22 @@
+.grow {
+  flex-grow: 1;
+}
+.imgInput {
+  display: none;
+}
+.cropPreview {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.imgCaption {
+  width: 100%;
+  border-radius: 8px;
+}
+.cropDialogTitle {
+  display: flex;
+  align-items: center;
+}
+.cropDialogPaper {
+  width: 400px;
+}

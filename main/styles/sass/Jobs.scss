@@ -1,0 +1,34 @@
+@import './shared/responsive';
+@import './shared/mui';
+
+.tag {
+  background-color: #c4c4c4;
+  padding: ($mui-spacing-unit / 2) $mui-spacing-unit;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin: ($mui-spacing-unit / 2);
+
+  @include respond-down(500px) {
+    font-size: 0.75em;
+  }
+}
+
+.place {
+  font-size: 0.7em;
+  @include respond-down(500px) {
+    font-size: 0.7em;
+  }
+}
+.root {
+  flex-grow: 1;
+}
+.paper {
+  margin: auto;
+  width: 95%;
+}
+.titleContainer {
+  color: rgba(0, 168, 255, 1);
+  padding-top: 10px;
+}

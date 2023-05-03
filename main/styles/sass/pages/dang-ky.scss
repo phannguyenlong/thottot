@@ -1,0 +1,103 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  text-align: center;
+  margin: auto auto;
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px 0px;
+  outline: none;
+
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+
+.title {
+  color: #03dac6;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.inputContainer {
+  margin: auto auto;
+  width: 60%;
+
+  @include respond-down($container-lg) {
+    margin: auto auto;
+    width: 70%;
+  }
+
+  @include respond-down(400px) {
+    margin: auto auto;
+    width: 80%;
+  }
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  padding: 1% 0 2% 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  @include respond-down(400px) {
+    width: 60%;
+    padding-top: 5%;
+  }
+}
+
+.line {
+  display: flex;
+  height: 5%;
+  align-items: center;
+
+  &Item {
+    display: inline-block;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @include respond-down(400px) {
+    padding-top: 4%;
+    width: 100%;
+  }
+}
+
+.special {
+  width: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.root {
+  height: 55px;
+  background: #3b5998;
+  color: white;
+  @include mui-respond-down(md) {
+    fontsize: 13px;
+  }
+}
+.btnRoot {
+  height: 55px;
+  background: #4db428;
+  color: white;
+  &:hover {
+    background: FFFF00;
+  }
+  @include mui-respond-down(md) {
+    fontsize: 13px;
+  }
+}
+.input {
+  margin: 2% 0 2% 0;
+}

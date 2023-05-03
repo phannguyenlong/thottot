@@ -1,0 +1,15 @@
+{
+    "semi": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "overrides": [
+        {
+          "files": "*.(css|scss)",
+          "options": {
+            "parser": "css"
+          }
+        }
+    ]
+}

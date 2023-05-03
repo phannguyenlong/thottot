@@ -1,0 +1,19 @@
+@import '../shared/mui';
+
+.container {
+    margin-top: ($mui-spacing-unit * 3);
+    width: 100%;
+}
+.formContainer {
+    width: 80%;
+    margin: 0px auto;
+}
+.btnAvatar {
+    background-color: $mui-color-secondary;
+    color: white;
+    border-radius: 8px;
+}
+.btnSignup {
+    border-radius: 0;
+    font-size: 18px;
+}

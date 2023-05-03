@@ -1,0 +1,21 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 0px auto;
+
+  @include respond-down($container-xl) {
+    /* For mobile phones: */
+    width: 80%;
+  }
+
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+

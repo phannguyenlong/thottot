@@ -1,0 +1,23 @@
+$container-xl: 1500px;
+$container-lg: 1090px;
+
+// @include respond-up(200px) {}
+@mixin respond-up($value) {
+  @media only screen and (min-width: $value) {
+    @content;
+  }
+}
+
+// @include respond-down(200px) {}
+@mixin respond-down($value) {
+  @media only screen and (max-width: ($value - 1)) {
+    @content;
+  }
+}
+
+// @include respond-between(200px, 400px) {}
+@mixin respond-between($lower, $upper) {
+  @media only screen and (min-width: $lower) and (max-width: ($upper - 1)) {
+    @content;
+  }
+}

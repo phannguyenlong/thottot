@@ -1,0 +1,55 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  padding-top: ($mui-spacing-unit * 8);
+  padding-bottom: ($mui-spacing-unit * 5);
+  background-color: white;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+.title {
+  text-transform: uppercase;
+  font-size: bold;
+}
+.descContainer {
+  margin-top: ($mui-spacing-unit * 5);
+}
+.desc {
+  display: flex;
+  justify-content: center;
+}
+.descPaper {
+  border: solid 1px transparent;
+  width: 15vw;
+  height: 15vw;
+  min-width: 160px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 8px;
+  &:hover {
+    border: solid 1px $mui-color-primary;
+    cursor: pointer;
+  }
+}
+.descImg {
+  align-self: center;
+  max-height: 80px;
+}
+.descTitle {
+  padding-left: ($mui-spacing-unit / 2);
+  padding-right: ($mui-spacing-unit / 2);
+  text-align: center;
+  font-weight: bold;
+}

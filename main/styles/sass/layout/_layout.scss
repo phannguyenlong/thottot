@@ -1,0 +1,48 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.btn {
+  &Root {
+    background: $mui-color-primary;
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    margin: 0px 5px;
+    height: 48px;
+  }
+  &Lbl {
+    padding: 0px ($mui-spacing-unit * 2);
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    @include mui-respond-down(sm) {
+      font-size: 15px;
+      padding: 0px $mui-spacing-unit;
+    }
+  }
+  &LblCnt {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    img {
+      border-radius: 50%;
+    }
+    &LblMarginer {
+      width: 10px;
+    }
+  }
+}
+
+.cntr {
+  &PaperRoot {
+    text-align: center;
+    width: 250px;
+  }
+  &DropdownRoot {
+    padding: 5% 0 10% 0;
+    text-align: center;
+  }
+}

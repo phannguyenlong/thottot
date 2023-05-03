@@ -1,0 +1,62 @@
+@import './shared/responsive';
+@import './shared/mui';
+
+.container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+.upperContainer {
+  width: 100%;
+  background-color: white;
+}
+.lowerContainer {
+  margin-top: ($mui-spacing-unit * 2);
+  width: 100%;
+  background-color: white;
+}
+.catReset {
+  margin-left: ($mui-spacing-unit * 2);
+  text-decoration: none;
+  color: #4398d1;
+  font-size: 0.5em;
+}
+.sectionGridContainer {
+  padding: ($mui-spacing-unit * 7) ($mui-spacing-unit * 5);
+}
+.catLbl {
+  font-weight: bold;
+  padding-bottom: ($mui-spacing-unit * 5);
+  @include mui-respond-down(sm) {
+    text-align: center;
+  }
+}
+.basicInfoContainer {
+  height: 100%;
+}
+.jobTextNotchedOutline {
+  border-radius: 3px;
+  border: 1px solid $mui-color-primary !important;
+}
+.inputLabel {
+  color: black;
+  font-weight: bold;
+}
+.btnPost {
+  font-size: 18px;
+  margin-top: ($mui-spacing-unit * 3);
+}
+.imagesContainer {
+  width: 100%;
+  @include mui-respond-down(sm) {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,145 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  text-align: center;
+  margin: auto auto;
+  width: 60%;
+  background-color: #fff;
+  padding: 0px 0px;
+  outline: none;
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+// this use for carousel
+.carouselContainer {
+  margin-bottom: 30px;
+  background: black;
+  height: 400px;
+  @include respond-down($container-lg) {
+    height: 250px;
+  }
+}
+.carousel {
+  margin: auto;
+  width: 90%;
+  @include respond-down($container-lg) {
+    width: 80%;
+  }
+}
+.carouselImageContainer {
+  position: relative;
+}
+.carouselImage {
+  margin: auto;
+  height: 400px;
+  @include respond-down($container-lg) {
+    width: 100%;
+    height: 250px;
+  }
+}
+.legend {
+  width: 60%;
+  padding: 3px;
+  background: rgb(0,0,0);
+  margin: auto;
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  border-radius: 8px;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  -webkit-transition:opacity .35s ease-in-out;
+  -moz-transition:opacity .35s ease-in-out;
+  -ms-transition:opacity .35s ease-in-out;
+  -o-transition:opacity .35s ease-in-out;
+  transition:opacity .35s ease-in-out;
+  @include respond-down($container-lg) {
+    width: 80%;
+    left: 10%;
+  }
+}
+.carouselContainer:hover .legend {
+  opacity: 0.9;
+}
+
+.information {
+  margin: auto;
+  padding: 0 5% 2% 5%;
+}
+.branchName {
+  text-align: left;
+}
+.info {
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 25% 55% 15%;
+  grid-template-rows: auto;
+  grid-column-gap: 2%;
+  align-items: center;
+
+  @include respond-down(400px) {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 55% 15%;
+  }
+}
+.tagContainer {
+  display: flex;
+  padding: 0 0 1.5% 0;
+}
+.description {
+  text-align: left;
+  font-style: italic;
+  font-weight: 400;
+
+  @include respond-down(400px) {
+    padding-top: 5%;
+  }
+}
+.rating {
+  display: flex;
+  padding: 0 5% 0 5%;
+  font-weight: bold;
+  font-style: italic;
+}
+.ratingLabel {
+  text-align: left;
+  padding-right: 30px;
+}
+.line {
+  text-align: left;
+  padding: 2% 4% 0 5%;
+}
+.lineImage {
+  width: 100%;
+}
+.commnent {
+  padding: 2% 5% 0 5%;
+}
+.tag {
+  display: inline-block;
+  background-color: rgba(196, 196, 196, 1);
+  padding: ($mui-spacing-unit / 2) $mui-spacing-unit;
+  border-radius: 3px;
+  font-style: italic;
+  font-weight: 600;
+  margin: ($mui-spacing-unit / 2);
+}
+.button {
+  background: #4db428;
+  color: white;
+  &:hover {
+    background: #ffff00;
+  }
+  @include mui-respond-down(md) {
+    fontsize: 16px;
+  }
+}

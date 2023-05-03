@@ -1,0 +1,46 @@
+@import '../shared/responsive';
+
+.container {
+text-align: justify;
+margin: auto auto;
+width: 56%;
+background-color: #fff;
+padding: 2% 2%;
+outline: none;
+
+    @include respond-down($container-xl) {
+        width: 76%;
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    @include respond-down($container-lg) {
+        width: 96%;
+        h1 {
+            font-size: 20px;
+        }
+    }
+}
+
+.Banner {
+    width: 100%;
+    height: 100%;
+}
+.images {
+    width: 75px;
+    height: 75px;
+    margin: 0 20px 0 0;
+}
+.inforContainer { 
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin: 20px 10px;
+}
+.title {
+    color: grey;
+}
+h1 {
+    font-size: 30px;
+}

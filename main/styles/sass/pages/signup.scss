@@ -1,0 +1,58 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  width: 60%;
+  margin: 0px auto;
+  background-color: #ffffff;
+  padding: ($mui-spacing-unit * 5) 0px;
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: #13b6a6;
+}
+
+.signupLink {
+  text-decoration: none;
+  color: black;
+}
+
+.selection {
+  width: 60%;
+
+  &Title {
+    margin-top: ($mui-spacing-unit * 2);
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &Logo {
+    width: 100%;
+    max-width: 220px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.selectionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selectionSectionRightBorder {
+  border-right: 1px solid black;
+  @include mui-respond-down(md) {
+    border-right: none;
+  }
+}

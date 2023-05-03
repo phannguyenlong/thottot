@@ -1,0 +1,24 @@
+@import './shared/responsive';
+@import './shared/mui';
+
+.container {
+  height: 100%;
+  min-width: 160px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.img {
+  align-self: center;
+  max-height: 120px;
+  padding-bottom: ($mui-spacing-unit * 3);
+}
+.options {
+  margin: $mui-spacing-unit;
+  width: 80%;
+  @include mui-respond-down(sm) {
+    width: 100%;
+  }
+}

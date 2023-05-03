@@ -1,0 +1,102 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+  text-align: center;
+  margin: auto auto;
+  width: 60%;
+  background-color: #fff;
+  padding: 20px 0px;
+  outline: none;
+
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+
+  @include respond-down($container-lg) {
+    width: 100%;
+  }
+}
+
+.inputContainer {
+  margin: auto auto;
+  width: 488px;
+
+  @include respond-down($container-lg) {
+    margin: auto auto;
+    width: 70%;
+  }
+
+  @include respond-down(400px) {
+    margin: auto auto;
+    width: 80%;
+  }
+}
+.input {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.input:first-child {
+  margin: 3% 0 3% 0;
+  @include respond-down(400px) {
+    margin: 3% 0 5% 0;
+  }
+}
+
+.checkboxContainer {
+  margin-left: -13px;
+  display: flex;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+.textWithLink {
+  font-size: 1.2em;
+  padding: 2% 0 0 0;
+  a {
+    padding-left: 1%;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: $mui-color-primary;
+  }
+}
+
+.button {
+  width: 100%;
+  padding: 2px 0px 2px 0px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.buttonContainer {
+  padding-top: 3vh;
+  width: 30%;
+  margin: auto auto;
+
+  @include respond-down($container-lg) {
+    width: 40%;
+  }
+
+  @include respond-down(400px) {
+    width: 80%;
+  }
+}
+
+.root {
+  height: 55px;
+  background-color: #3b5998;
+  color: white;
+  @include mui-respond-down(md) {
+    fontsize: 13px;
+  }
+}
+
+.btnRoot {
+  height: 55px;
+  background-color: #4db428;
+  color: white;
+  @include mui-respond-down(md) {
+    fontsize: 13px;
+  }
+}

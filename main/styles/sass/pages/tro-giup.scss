@@ -1,0 +1,17 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+.container {
+    margin: auto auto;
+    padding: 2% 2%;
+    width: 60%;
+    background-color: white;
+    @include respond-down($container-xl) {
+        width: 80%;
+      }
+    @include respond-down($container-lg) {
+        width: 100%;
+    }
+}
+.form {
+    margin: 0px 50px;
+}

@@ -1,0 +1,43 @@
+@import './shared/responsive';
+@import './shared/mui';
+@import './shared/base';
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: $mui-color-secondary;
+  height: $header-height;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.child {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  @include respond-down($container-xl) {
+    width: 80%;
+  }
+  @include respond-down($container-lg) {
+    width: 95%;
+  }
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.spacing {
+  flex-grow: 1;
+}
+
+.newpost {
+  @include mui-respond-down(md) {
+    display: none;
+  }
+}

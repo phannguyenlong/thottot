@@ -1,0 +1,117 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+    text-align: center;
+    margin: auto auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 0px;
+    outline: none;
+  
+    @include respond-down($container-xl) {
+      width: 80%;
+    }
+  
+    @include respond-down($container-lg) {
+      width: 100%;
+    }
+}
+.image{
+    margin-top: 10px;
+    width: 200px;
+    @include respond-down($container-lg) {
+        width: 100px;
+        margin-top: 30px;
+      }
+}
+.infoContainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    font-size: 1.1em;
+    align-content: center;
+    @include respond-down($container-lg) {
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
+.infomation {
+    width: 55%;
+    text-align: left;
+}
+.name {
+    padding: 2px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    @include respond-down($container-lg) {
+        flex-direction: column;
+    }
+}
+.name div:last-child {
+    font-style: italic;
+}
+.name span {
+    color: green;
+    padding: 4px;
+}
+
+.contactContainer {
+    font-style: italic;
+    color: rgba(0,0,0,0.7);
+}
+.contactContainer div {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    @include respond-down($container-lg) {
+        padding-top: 0%;
+        padding-bottom: 1%;    
+    }
+}
+.rating {
+    font-weight: bold;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    @include respond-down($container-lg) {
+        width: 190px;
+    }
+}
+.message {
+    padding: 20px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    @include respond-down($container-lg) {
+        font-size: 1em;
+    }
+}
+.root {
+    height: 55px;
+    background-color:lawngreen;
+    font-size: 1.1em;
+    color: white;
+    @include mui-respond-down($container-lg) {
+      fontsize: 8px;
+    }
+}
+.root1 {
+    height: 55px;
+    background-color:chocolate;
+    font-size: 1.1em;
+    color: white;
+    @include mui-respond-down($container-lg) {
+      fontsize: 8px;
+    }
+}
+.button {
+    width: 30%;
+    margin: auto;
+    padding: 5px;
+    @include mui-respond-down(md) {
+        width: 60%;
+    }
+}

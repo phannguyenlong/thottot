@@ -1,0 +1,112 @@
+@import '../shared/responsive';
+@import '../shared/mui';
+
+.container {
+    text-align: center;
+    margin: auto auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 0px;
+    outline: none;
+  
+    @include respond-down($container-xl) {
+      width: 80%;
+    }
+  
+    @include respond-down($container-lg) {
+      width: 100%;
+    }
+}
+
+.imageUpload {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imageText {
+    width: 60%;
+}
+.sectionTitle {
+    padding: 2% 0 2% 0;
+    @include respond-down($container-lg) {
+        padding: 2% % 2% 2%;
+    }
+}
+.sectionTitle p {
+    margin: 0 0 0 0;
+}
+.dataContainer {
+    margin-top: 2%;
+}
+.dataField {
+    margin: 2% auto 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #c4c4c4 0.1em;
+    border-radius: 5px;
+    height: 35px;
+    width: 90%;
+}
+.dataField div {
+    text-align: left;
+    width: auto;
+    padding: 0 0 0 2%;
+    font-weight: bold;
+}
+.dataField img {
+    padding: 0 3% 0 0;
+    cursor: pointer;
+}
+.image {
+    position: relative;
+}
+h2 {
+    margin: 0 0 0 0;
+}
+.buttonContainer {
+    width: 20%;
+    position: relative;
+    margin: 5% auto 3% auto;
+    @include respond-down($container-lg) {
+        width: 40%;
+    }
+}
+.buttonText {
+    color: white;
+    font-size: 1.2em;
+    @include respond-down($container-lg) {
+        height: 5%;
+        font-size: 1em;
+    }
+}
+.buttonProgress {
+    color: green;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    @include respond-down($container-lg) {
+        left: 40%;
+    }
+}
+.line {
+    display: flex;
+    height: 5%;
+    align-items: center;
+  
+    &Item {
+      display: inline-block;
+      padding-bottom: 4%;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+    @include respond-down(400px) {
+      padding-top: 2%;
+      width: 100%;
+    }
+}
+.faceButton {
+    background: blue;
+}
